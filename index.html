@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Vulnerable Web Training Environment (VWTE)</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/shop-item.css" rel="stylesheet">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <link rel="icon" type="image/png" href="/xvwa/img/xvwa-logo-1.png" />
+<div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/vwte/">VWTE</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav pull-right navbar-nav">
+            <li class="dropdown" id="menuLogin">
+                <a href='#' class='dropdown-toggle' data-toggle='dropdown'> Admin <b class='caret'></b></a><ul class='dropdown-menu'><li><a href='/xvwa/logout.php'>Logout</a></li></ul>
+                
+        </li>
+        <li>
+            <a href="#" data-toggle="modal" data-target="#myModal">About</a>
+            
+            
+
+      </li>
+  </ul>
+
+</div>
+<!-- /.navbar-collapse -->
+</div>
+
+
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="list-group">
+    <a href="#" class="list-group-item active">Setup</a>
+    <a href="/xvwa/" class="list-group-item">Home</a>
+    <a href="/xvwa/instruction.php" class="list-group-item">Instructions</a>
+    <a href="/xvwa/setup/" class="list-group-item">Setup / Reset</a>
+</div>
+<div class="list-group">
+    <a href="#" class="list-group-item active">Attacks</a>
+    <a href="/xvwa/vulnerabilities/sqli/" class="list-group-item">SQL Injection</a>
+    <a href="/xvwa/vulnerabilities/sqli_blind/" class="list-group-item">SQL Injection (Blind)</a>
+    <a href="/xvwa/vulnerabilities/cmdi/" class="list-group-item">OS Command Injection</a>
+    <a href="/xvwa/vulnerabilities/xpath/" class="list-group-item">XPATH Injection</a>
+    <a href="/xvwa/vulnerabilities/formula_injection/" class="list-group-item">Formula Injection</a>
+    <a href="/xvwa/vulnerabilities/php_object_injection/" class="list-group-item">PHP Object Injection</a>
+    <a href="/xvwa/vulnerabilities/fileupload/" class="list-group-item">Unrestricted File Upload</a>
+    <a href="/xvwa/vulnerabilities/reflected_xss/" class="list-group-item">XSS - Reflected</a>
+    <a href="/xvwa/vulnerabilities/stored_xss/" class="list-group-item">XSS - Stored</a>
+    <a href="/xvwa/vulnerabilities/dom_xss/" class="list-group-item">XSS - DOM Based</a>
+    <a href="/xvwa/vulnerabilities/ssrf_xspa/" class="list-group-item">SSRF / XSPA</a>
+    <a href="/xvwa/vulnerabilities/fi/" class="list-group-item">File Inclusion</a>
+    <a href="/xvwa/vulnerabilities/sessionflaws/" class="list-group-item">Session Flaws</a>
+    <a href="/xvwa/vulnerabilities/idor/" class="list-group-item">Insecure Direct Object Reference</a>
+    <a href="/xvwa/vulnerabilities/missfunc/" class="list-group-item">Missing Functional Access Control</a>
+    <a href="/xvwa/vulnerabilities/csrf/" class="list-group-item">CSRF</a>
+    <a href="/xvwa/vulnerabilities/crypto/" class="list-group-item">Cryptography</a>
+    <a href="/xvwa/vulnerabilities/redirect/" class="list-group-item">Redirects & Forwards</a>
+    <a href="/xvwa/vulnerabilities/ssti/" class="list-group-item">Server Side Template Injection</a>
+</div>             </div>
+
+            <div class="col-md-9">
+
+                <div class="thumbnail">
+    <!--
+                    <img class="img-responsive" src="http://placehold.it/800x300" alt="">
+                -->
+                <div class="caption-full">
+                    <h4><a href="#">Vulnerable Web Training Environment (VWTE)</a></h4>
+                    <p align="justify">
+                       VWTE is a badly coded web application written in PHP/MySQL that helps security enthusiasts to learn application security.  It’s not advisable to host this application online as it is designed to be “Xtremely Vulnerable”. We recommend hosting this application in local/controlled environment and sharpening your application security ninja skills with any tools of your own choice. It’s totally legal to break or hack into this. The idea is to evangelize web application security to the community in possibly the easiest and fundamental way. Learn and acquire these skills for good purpose. How you use these skills and knowledge base is not our responsibility. 
+                    </p>
+                    <p align="justify">
+                        VWTE is designed to understand following security issues. 
+                        <ul>
+                            <li>SQL Injection – Error Based</li> 
+                            <li>SQL Injection – Blind</li> 
+                            <li>OS Command Injection</li> 
+                            <li>XPATH Injection </li> 
+                            <li>Formula Injection </li> 
+                            <li>PHP Object Injection </li> 
+                            <li>Unrestricted File Upload</li> 
+                            <li>Reflected Cross Site Scripting</li>  
+                            <li>Stored Cross Site Scripting </li> 
+                            <li>DOM Based Cross Site Scripting </li> 
+                            <li>Server Side Request Forgery / Cross Site Port Attacks(CSRF/XSPA)</li>  
+                            <li>File Inclusion </li> 
+                            <li>Session Issues </li> 
+                            <li>Insecure Direct Object Reference </li> 
+                            <li>Missing Functional Level Access Control</li>  
+                            <li>Cross Site Request Forgery (CSRF)</li> 
+                            <li>Cryptography </li> 
+                            <li>Unvalidated Redirect & Forwards</li> 
+                            <li>Server Side Template Injection</li> 
+                        </ul>
+                    </p>
+                    <p>
+                        Good Luck and Happy Hacking!
+                    </p><br>
+
+                    </div>
+
+                </div>
+
+                <div class="well">
+                    <p>
+                        <strong>Disclaimer</strong><br>
+                        Do not host this application on live or production environment. VWTE is totally vulnerable application and giving online/live access of this application could lead to complete compromise of your system. We are not responsible for any such bad incidents. Stay safe ! 
+                    </p>
+                    <hr>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <div class="container">
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <center> <p>
+<strong>XVWA</strong> is licensed under a <a rel="license" href="http://www.gnu.org/licenses/gpl-3.0.txt">GNU GENERAL PUBLIC LICENSE Version 3</a>                   
+                </p> </center>
+                </div>
+            </div>
+        </footer>
+
+    </div>    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+<!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">About XVWA and Team</h4>
+              </div>
+              <div class="modal-body">
+                  <p><strong>XVWA</strong> is intentionally designed with many security flaws and enough technical ground to upskill application security knowledge. This whole idea is to evangelize web application security issues. Do let us know your suggestions for improvement or any more vulnerability you would like to see in XVWA future releases. </p>
+                  <p><strong>Authors</strong><br>
+                    <a target="_blank" href="https://twitter.com/s4n7h0">@s4n7h0 </a><br>
+                    <a target="_blank" href="https://twitter.com/samanl33t ">@samanL33T </a>
+                    
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div></body>
+
+</html>
